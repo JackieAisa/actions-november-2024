@@ -1,15 +1,14 @@
 name: CI
 
-
 on: 
-    push:
-      branch: ["main"]
+  push:
+    branches: ["main"]
 
 jobs:
   builds:
     runs-on: ubutu-latest
 
     steps:
-    
-      -name: Checkout SCM 
-       uses: actions/checkout@v4
+
+      - name: Checkout SCM 
+        uses: actions/checkout@v4
